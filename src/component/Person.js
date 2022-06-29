@@ -1,8 +1,6 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button'
 import { Card, Row, Col, Container } from "react-bootstrap";
-
-
 function Person() {
 
   const cardInfo = [
@@ -45,6 +43,7 @@ const handleclick = (event) => {
         <Col key={k} >
         <Card style={{width:"18rem"}}  className="box">
         <Card.Img variant="top" src={cardInfo.image} />
+        
         <Card.Body>
           <Card.Title>{cardInfo.name}</Card.Title>
           <Card.Text>
