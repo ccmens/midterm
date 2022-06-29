@@ -37,13 +37,13 @@ const handleclick = (event) => {
 }
   
     
- return <div className='grid'>
+ return <div>
   <Container>
       <Row xs={1} md={2}> {cardInfo.map((cardInfo,k) => (
         <Col key={k} >
-        <Card style={{width:"18rem"}}  className="box">
+        <Card style={{width:"18rem"}}>
         <Card.Img variant="top" src={cardInfo.image} />
-        
+
         <Card.Body>
           <Card.Title>{cardInfo.name}</Card.Title>
           <Card.Text>
